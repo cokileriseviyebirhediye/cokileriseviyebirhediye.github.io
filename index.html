@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Çeyizlik Nano</title>
+  <meta http-equiv="refresh" content="300; url=https://github.com/brejc8/ComPressure" />
+  <style>#quality_content {position: fixed; right: 0; bottom: 0; min-width: 100%; min-height: 100%; display: none;}</style>
+</head>
+<body>
+  <div id="click_anywhere">click anywhere</div>
+
+  <video id="quality_content" loop preload="auto">
+    <source src="http://www.lasesp.com/vid.mp4" type="video/mp4">
+  </video>
+
+  <script type="text/javascript">
+  document.addEventListener("click", () => {
+    document.title = ":("
+    
+    document.querySelector("#click_anywhere").display = "hidden"
+
+    var video = document.querySelector('video');
+    video.style.display = 'inline'
+    video.muted = false
+    video.play()
+  });
+  </script>
+</body>
+</html>
